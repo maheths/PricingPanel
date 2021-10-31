@@ -1,0 +1,92 @@
+body {
+  background: indigo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box
+}
+
+.panel {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing {
+  border-bottom: solid 1px lightgreen;
+}
+
+.pricing:last-child {
+  border-bottom: none;
+}
+
+.pricing img {
+  max-width: 100%;
+  margin-bottom: 25px;
+  max-height: 500px;
+}
+
+.header {
+  color: #888;
+  font-weight: 600px;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+.features {
+  margin: 50px 0 25px;
+  color: indigo
+}
+
+.pricing-feature {
+  font-weight: 600px; 
+  letter-spacing: 1px;
+  line-height: 1.5px;
+  padding: 15px 0;
+  border-top: 1px solid lightgreen;
+}
+
+button {
+  border: 1px solid indigo;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+
+
+}
+
+button:hover, button:focus {
+  background-color: indigo;
+  color: whitesmoke;
+
+}
+
+@media (min-width:900px) {
+  .panel {
+    flex-direction: row;
+  }
+
+  .pricing {
+  border-bottom: none;
+  border-right: 1px solid lightgreen;
+  padding: 25px 50px;
+}
+
+.pricing:last-child {
+  border-right: none;
+}
+
+}
